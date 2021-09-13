@@ -28,6 +28,6 @@ function updateTimer() {
     clearInterval(interval)
     loader.classList.remove('loading')
     timer.innerText = 0
-    btn.innerText = 'Load'
+    btn.innerText = 'Done'
   }
 }
