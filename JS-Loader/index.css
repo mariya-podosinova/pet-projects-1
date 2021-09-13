@@ -52,3 +52,9 @@ button:hover, button:focus{
 @keyframes load{
     to {transform: rotate(360deg)}
 }
+
+#timer{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 35px;
+}
