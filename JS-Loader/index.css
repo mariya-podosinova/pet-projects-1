@@ -26,6 +26,7 @@ body, .container{
     border-top: 16px solid black;
     border-bottom: 16px solid black;
     border-radius: 50%;
+    background: red;
 }
 
 button{
@@ -41,8 +42,11 @@ button:hover, button:focus{
 }
 
 .loading{
-    animation: load 3s linear infinite;
-    
+    animation: load 3s linear infinite;    
+}
+.loading + button{
+    background-color: lightsalmon;
+
 }
 
 @keyframes load{
