@@ -33,6 +33,7 @@ button{
     padding: 1em 2em;
     margin: 1em;
     border-radius: 5px;
+    width: 150px;
 }
 
 button:hover, button:focus{
