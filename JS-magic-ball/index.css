@@ -1,0 +1,43 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    background: darkblue;
+    height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.advice-eye{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: lightskyblue;
+    text-align: center;
+    padding: 0.5em;
+    position: relative;
+}
+p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 700;
+    transform: translate(-50%, -50%)
+}
+
+button {
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    font-weight: 900;
+    background: goldenrod;
+    margin: -10px;
+    width: 200px;
+
+}
+
+button:hover{
+    cursor: pointer;
+}
