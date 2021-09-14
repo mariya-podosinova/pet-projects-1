@@ -1,8 +1,8 @@
 const btn = document.getElementById('advice-btn')
 const adviceDisplay = document.getElementById('advice-display')
+const modeSelector = document.getElementById('mode-selector')
 
 const advice = [
-  'Let’s be real.There are very few things in this world that you can shake and instantly receive a sarcastic answer from…',
   'Honestly, has your brain ever even considered something like that?',
   'Sad. Sad that we even had to bring this to your attention.',
   'But in sadness, there is hope.',
@@ -10,9 +10,24 @@ const advice = [
   'Well, duh.',
 ]
 
-btn.addEventListener('click', displayAdvice)
+const badAdvice = [
+  'Don`t count on it. 🍸',
+  'My reply is no. 🍺',
+  'My sources say no.🍾',
+  'Better not tell you now.🥂',
+  'Outlook not so good.🍹',
+]
 
-function displayAdvice() {
-  let random = Math.floor(Math.random() * advice.length)
-  adviceDisplay.textContent = advice[random]
+btn.addEventListener('click', function () {
+  const isEvil = modeSelector.checked
+  if (isEvil) {
+    displayAdvice(badAdvice)
+  } else {
+    displayAdvice(advice)
+  }
+})
+
+function displayAdvice(adviceArr) {
+  let random = Math.floor(Math.random() * adviceArr.length)
+  adviceDisplay.textContent = adviceArr[random]
 }

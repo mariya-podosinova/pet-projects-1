@@ -10,6 +10,7 @@
    justify-content: center;
    align-items: center;
 }
+
 .advice-eye{
     width: 300px;
     height: 300px;
@@ -18,6 +19,8 @@
     text-align: center;
     padding: 0.5em;
     position: relative;
+    font-weight: 900;
+    font-size: 32px;
 }
 p{
     position: absolute;
@@ -33,11 +36,16 @@ button {
     border-radius: 5px;
     font-weight: 900;
     background: goldenrod;
-    margin: -10px;
+    margin-top: -10px;
     width: 200px;
 
 }
 
 button:hover{
     cursor: pointer;
+}
+
+.checkbox{
+    margin-top: 20px;
+    color: white;
 }
