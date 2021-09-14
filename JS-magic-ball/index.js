@@ -1,6 +1,7 @@
 const btn = document.getElementById('advice-btn')
 const adviceDisplay = document.getElementById('advice-display')
 const modeSelector = document.getElementById('mode-selector')
+let clickAmount = 0
 
 const advice = [
   'Honestly, has your brain ever even considered something like that?',
@@ -20,14 +21,20 @@ const badAdvice = [
 
 btn.addEventListener('click', function () {
   const isEvil = modeSelector.checked
-  if (isEvil) {
-    displayAdvice(badAdvice)
+  if (clickAmount < 3) {
+    if (isEvil) {
+      displayAdvice(badAdvice)
+    } else {
+      displayAdvice(advice)
+    }
   } else {
-    displayAdvice(advice)
+    btn.textContent = ''
+    adviceDisplay.textContent = 'Tired 🥱. Come back later'
   }
 })
 
 function displayAdvice(adviceArr) {
   let random = Math.floor(Math.random() * adviceArr.length)
   adviceDisplay.textContent = adviceArr[random]
+  clickAmount++
 }
