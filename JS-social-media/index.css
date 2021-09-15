@@ -15,18 +15,18 @@ h1 {
   font-size: 3em;
 }
 h1 > span {
-  color: #fb0081;
+  color: #92004b;
 }
 .subtitle {
   margin-top: 0;
   font-size: 1.5em;
 }
 .card-name {
-    margin-top: 0;
-    font-size: 1.5em;
-    text-transform: capitalize;
-    color: black;
-  }
+  margin-top: 0;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  color: black;
+}
 .capybara-basket {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -38,26 +38,35 @@ h1 > span {
 .pic {
   border-radius: 10px;
 }
-.card{
-    height: 260px;
-    padding: 1em;
-    background-color: #ff6700;
-    color: white;
-    cursor: pointer;
+.card {
+  height: 260px;
+  padding: 1em;
+  background-color: #ff6700;
+  color: white;
+  cursor: pointer;
 }
-.pic{
-    max-height: 200px;
-    margin: 0 auto;
+.pic {
+  max-height: 200px;
+  margin: 0 auto;
+}
+.material-icons-outlined {
+  color: #92004b69;
+}
+.material-icons-outlined:hover {
+  color: #92004b;
+}
+.liked{
+  color: black;
 }
 /* dev tools-->ctrl+shift+p -->show rendering-->emulate css...*/
-@media (prefers-color-scheme: dark){
-    .container{
-        background: black;
-    }
-    .card{
-        background: darkolivegreen;
-    }
-    h1{
-        color: white
-    }
+@media (prefers-color-scheme: dark) {
+  .container {
+    background: black;
+  }
+  .card {
+    background: darkolivegreen;
+  }
+  h1 {
+    color: white;
+  }
 }

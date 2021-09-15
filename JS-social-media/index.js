@@ -42,4 +42,7 @@ capybaras.forEach((capybara) => {
   paw.classList.add('material-icons-outlined')
   paw.textContent = 'pets'
   card.appendChild(paw)
+  paw.addEventListener('click', function () {
+    paw.classList.toggle('liked')
+  })
 })
