@@ -49,8 +49,9 @@ h1 > span {
     max-height: 200px;
     margin: 0 auto;
 }
+/* dev tools-->ctrl+shift+p -->show rendering-->emulate css...*/
 @media (prefers-color-scheme: dark){
-    body{
+    .container{
         background: black;
     }
     .card{

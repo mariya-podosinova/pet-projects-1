@@ -37,4 +37,9 @@ capybaras.forEach((capybara) => {
   cardName.classList.add('card-name')
   cardName.innerText = capybara.name
   card.appendChild(cardName)
+
+  const paw = document.createElement('span')
+  paw.classList.add('material-icons-outlined')
+  paw.textContent = 'pets'
+  card.appendChild(paw)
 })
