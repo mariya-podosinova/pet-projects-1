@@ -1,6 +1,11 @@
 const calculate = document.getElementById('calculate')
 
 calculate.addEventListener('click', calculateTotal)
+calculate.addEventListener('keydown', function (e) {
+  if (e.code === 'Enter') {
+    calculateTotal()
+  }
+})
 
 function calculateTotal() {
   const billValue = parseFloat(document.getElementById('bill-value').value)
