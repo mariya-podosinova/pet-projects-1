@@ -1,0 +1,28 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    background: rgb(224, 188, 220);
+}
+.container{
+    border: 1px solid black;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 200px auto;
+    padding: 5px;
+}
+.form-control, button{
+    margin: 10px 0;
+    font-weight: bold;
+}
+input, button{background: azure;padding: 5px;}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+}
+.result{
+    display: flex;
+    justify-content: space-between;
+}
