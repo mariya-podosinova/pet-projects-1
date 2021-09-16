@@ -8,5 +8,8 @@ function calculateTotal() {
 
   const billTotal = billValue + (billValue * tipValue) / 100
   const totalBill = document.getElementById('total')
-  totalBill.innerText = billTotal.toFixed(2).toLocaleString('en')
+  totalBill.innerText = billTotal.toLocaleString('en', {
+    style: 'currency',
+    currency: 'GBP',
+  })
 }
